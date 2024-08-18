@@ -1,2 +1,0 @@
-Hello
-This is bug fix file.
