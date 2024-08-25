@@ -30,7 +30,7 @@ except IndexError:
     print("Index is not correct")    
 
 
-# finnary clause
+# finnaly clause
 # the content of finally is always executed whether error occured or not
 
 try:
