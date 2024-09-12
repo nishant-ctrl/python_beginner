@@ -33,3 +33,4 @@
 import nishant
 nishant.greet()
 print(nishant.str)
+print(dir(nishant))
