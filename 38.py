@@ -6,8 +6,8 @@ class Employee:
         self._salary=salary
 
     @classmethod
-    def fromstr(cls , str):
-        return cls(str.split("-")[0] , str.split("-")[1])
+    def fromstr(cls , str):                                 # cls is same as Employee
+        return cls(str.split("-")[0] , int(str.split("-")[1]))
 
 e1=Employee("Nishant",100)   # This is normal case no problen
 print(e1._name)
@@ -16,7 +16,7 @@ print(e1._salary)
 # Suppose that data is in formar of str="Nishant-100"
 # We have to parse string first and then store 
 # We have to use class methos as alternative constructors
-string="Aman-100"
+string="Aman-10000"
 print(string.split("-"))
 # e2=Employee(str.split("-")[0] , str.split("-")[1])     # It works but it is not good for big programs
 e2=Employee.fromstr(string)
